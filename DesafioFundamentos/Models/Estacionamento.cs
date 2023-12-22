@@ -20,13 +20,13 @@ namespace DesafioFundamentos.Models
             // *IMPLEMENTE AQUI*
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();        
-            bool placaValida = verificaPlacaValida(placa);
+            bool placaValida = VerificarPlacaValida(placa);
             if (!placaValida) 
             {
                 Console.WriteLine("A placa não é válida. Por favor, insira uma placa válida.");                
             }
 
-            bool veiculoExiste = procurarVeiculo(placa);
+            bool veiculoExiste = ProcurarVeiculo(placa);
             if (veiculoExiste)
             {
                 throw new ArgumentException("Já existe veículo cadastrado no sistema com essa placa.");                    
@@ -42,7 +42,7 @@ namespace DesafioFundamentos.Models
             // Pedir para o usuário digitar a placa e armazenar na variável placa
             // *IMPLEMENTE AQUI*
             string placa = Console.ReadLine();
-            bool veiculoExiste = procurarVeiculo(placa);
+            bool veiculoExiste = ProcurarVeiculo(placa);
             if (veiculoExiste)
             {
                 // Verifica se o veículo existe
@@ -95,7 +95,7 @@ namespace DesafioFundamentos.Models
             }
         }
 
-        public bool verificaPlacaValida(string placa)
+        private bool VerificarPlacaValida(string placa)
         {
             bool placaNulaOuVazia = string.IsNullOrWhiteSpace(placa);
             bool placaPossuiTamanhoMenorQueZero = placa.Length < 0;
@@ -110,7 +110,7 @@ namespace DesafioFundamentos.Models
             return padraoMercosul.IsMatch(placa);            
         }
 
-        public bool procurarVeiculo(string veiculo)
+        private bool ProcurarVeiculo(string veiculo)
         {
             bool veiculoExisteNaLista = veiculos.Contains(veiculo);            
             return veiculoExisteNaLista;
