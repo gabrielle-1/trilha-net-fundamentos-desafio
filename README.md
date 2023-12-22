@@ -37,6 +37,9 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
 
+Descrição projeto:
+O projeto apresenta um sistema robusto de gerenciamento de estacionamento. A classe Estacionamento oferece funcionalidades para adicionar, remover e listar veículos, além de calcular o valor a ser cobrado, considerando o tempo de permanência de cada veículo. As validações implementadas garantem a aceitação apenas de placas válidas no padrão Mercosul, embora ainda não verifique se a placa realmente existe, um aspecto para aprimoramento futuro. A aplicação mantém um controle eficiente do registro de veículos estacionados. Com uma interface interativa via console, os usuários têm acesso a operações como adicionar um veículo ao estacionamento, remover veículos, listar os veículos atualmente estacionados e calcular o valor a pagar com base no tempo de permanência de cada veículo.
+
 Diagrama novo modelo da classe Estacionamento abaixo:
 
 ![Digrama novo modelo Estacionamento](DiagramaEstacionamento.png)
