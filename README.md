@@ -37,5 +37,17 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
 
+Diagrama novo modelo da classe Estacionamento abaixo:
+
+![Digrama novo modelo Estacionamento](DiagramaEstacionamento.png)
+
+**OBS:** Não é permitido o cadastro de mais de um veículo com a mesma placa.
+
 ## Referencias
 [Link padrão placa Mercosul utilizada no código](https://www.detran.ce.gov.br/esclareca-suas-duvidas-sobre-a-placa-padrao-mercosul/#:~:text=A%20nova%20placa%20padrão%20Mercosul,ponta%20esquerda%20da%20mesma%20faixa.)
+
+Exemplo utilização cadastro placa de veículo
+- BRA2E19
+- BEE4R22
+- FJB4E12
+
