@@ -32,7 +32,12 @@ while (exibirMenu)
     switch (Console.ReadLine())
     {
         case "1":
-            es.AdicionarVeiculo();
+            try { 
+                es.AdicionarVeiculo();
+            } catch (Exception e) {
+                Console.WriteLine($"Ocorreu uma exceção genérica: {e.Message}");
+            }
+            
             break;
 
         case "2":
